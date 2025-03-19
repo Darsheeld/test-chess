@@ -5,27 +5,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schess.org</title>
     <link rel="stylesheet" href="Schess.css">
-    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
-          integrity="sha384-q94+CczP1ixonQyYniiJM8kyIL0a9szrZMa/nxvnqnGCvv+n9LenciG3coNIQLew" crossorigin="anonymous">
+   
 </head>
 <body>
-<div class="container3">
-    <h1 style="text-align: center; font-family: cursive;">WELCOME TO SCHESS</h1>
-    <div class="container">
-        <p style="text-align: center;">THIS IS YOUR OPPONENT</p>
-    </div>
-    <div id="board" style="width: 400px; margin: 0 auto;"></div>
-    <div id="status"></div>
-    <button id="playBtn" style="text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">PLAY</button>
+    <div class="container3">
+        <h1 style="text-align: center;">WELCOME TO SCHESS.org</h1>
+        <div class="container">
+            <p style="text-align: center;">THIS IS YOUR OPPONENT</p>
+        </div>
+            <div class="chessBoard">
+                <!-- 8st -->
+                <div class="square white">
+                    <div class="piece rook" color="black">
+                        <img src="Black-Rook.png" alt="Rook">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="piece knight" color="black">
+                        <img src="Black-Knight.png" alt="Knight">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="piece bishop" color="black">
+                        <img src="Black-Bishop.png" alt="Bishop">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="piece queen" color="black">
+                        <img src="Black-Queen.png" alt="Queen">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="piece king" color="black">
+                        <img src="Black-King.png" alt="King">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="piece bishop" color="black">
+                        <img src="Black-Bishop.png" alt="Bishop">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="piece knight" color="black">
+                        <img src="Black-Knight.png" alt="Knight">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="coordinate rank whiteText">8</div>
+                    <div class="piece rook" color="black">
+                        <img src="Black-Rook.png" alt="Rook">
+                    </div>
+                </div>
+                <!-- 7nd -->
+                <div class="square black">
+                    <div class="piece pawn" color="black">
+                        <img src="Black-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="piece pawn" color="black">
+                        <img src="Black-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="piece pawn" color="black">
+                        <img src="Black-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="piece pawn" color="black">
+                        <img src="Black-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="piece pawn" color="black">
+                        <img src="Black-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="piece pawn" color="black">
+                        <img src="Black-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="piece pawn" color="black">
+                        <img src="Black-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="coordinate rank blackText">7</div>
+                    <div class="piece pawn" color="black">
+                        <img src="Black-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <!-- 6th -->
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black">
+                    <div class="coordinate rank whiteText">6</div>
+                </div>
+                <!-- 5st -->
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white">
+                    <div class="coordinate rank blackText">5</div>
+                </div>
+                <!-- 4th -->
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black">
+                    <div class="coordinate rank whiteText">4</div>
+                </div>
+                <!-- 3th -->
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white"></div>
+                <div class="square black"></div>
+                <div class="square white">
+                    <div class="coordinate rank blackText">3</div>
+                </div>
+                <!-- 2th -->
+                <div class="square white">
+                    <div class="piece pawn" color="white">
+                        <img src="White-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="piece pawn" color="white">
+                        <img src="White-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="piece pawn" color="white">
+                        <img src="White-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="piece pawn" color="white">
+                        <img src="White-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="piece pawn" color="white">
+                        <img src="White-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="piece pawn" color="white">
+                        <img src="White-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="piece pawn" color="white">
+                        <img src="White-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="coordinate rank whiteText">2</div>
+                    <div class="piece pawn" color="white">
+                        <img src="White-Pawn.png" alt="Pawn">
+                    </div>
+                </div>
+                <!-- 1th -->
+                <div class="square black">
+                    <div class="coordinate whiteText">a</div>
+                    <div class="piece rook" color="white">
+                        <img src="White-Rook.png" alt="Rook">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="coordinate blackText">b</div>
+                    <div class="piece knight" color="white">
+                        <img src="White-Knight.png" alt="Knight">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="coordinate whiteText">c</div>
+                    <div class="piece bishop" color="white">
+                        <img src="White-Bishop.png" alt="Bishop">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="coordinate blackText">d</div>
+                    <div class="piece queen" color="white">
+                        <img src="White-Queen.png" alt="Queen">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="coordinate whiteText">e</div>
+                    <div class="piece king" color="white">
+                        <img src="White-King.png" alt="King">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="coordinate blackText">f</div>
+                    <div class="piece bishop" color="white">
+                        <img src="White-Bishop.png" alt="Bishop">
+                    </div>
+                </div>
+                <div class="square black">
+                    <div class="coordinate whiteText">g</div>
+                    <div class="piece knight" color="white">
+                        <img src="White-Knight.png" alt="Knight">
+                    </div>
+                </div>
+                <div class="square white">
+                    <div class="coordinate rank blackText">1</div>
+                    <div class="coordinate blackText">h</div>
+                    <div class="piece rook" color="white">
+                        <img src="White-Rook.png" alt="Rook">
+                    </div>
+
+
+                </div>
+            </div>
+    <button id="startBtn">Start Position</button>
+    <button id="clearBtn">Clear Board</button>
     <div class="container2">
         <p style="text-align: center;">THIS IS YOU</p>
     </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha384-w5yCIimjv2AKcWDIyUSvjQqYkgjbA/JPSEu+Ry8wkWOgE3n1rQKwyFeilu3rW+M2" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
-        integrity="sha384-8Vi8qzq3vjTHrbL0GmGqXeWzi3no+NjL6wuW9jU3KcQoH3eXPt4oJELPpVgixGm3"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.js" integrity="sha512-mxRsoqsTrk12h9EBYdFm52vH0bsryR5RQu4+hBqO80o624F4lcYhFwA605y2VzypEzB2gG3eQ4e/fFhR1Hj5Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 <script src="Schess.js"></script>
 </body>
 </html>
+
+
+
+
